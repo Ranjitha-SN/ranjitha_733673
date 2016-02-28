@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<head>
+<title>training day1</title>
+</head>
+<body>
+<h1>Happy Learning!!!!</h1>
+</body>
+</html>
