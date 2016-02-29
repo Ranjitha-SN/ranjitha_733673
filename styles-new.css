@@ -1,0 +1,14 @@
+.carlist
+{
+    list-style-type: none;
+}
+body {
+ background-color: #77AAFF;
+}
+#submit-page {
+color: #000000;
+font-size: 24pt;
+}
+#form-page {
+text-align:center;
+}
