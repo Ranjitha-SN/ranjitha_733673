@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" href="styles.css">
+	<script src="jquery.min.js"></script>
+	<script src="myscript.js"></script>
+  </head>
+  <body>
+  
+  <div id="home-page">
+    <div id="submit-page"><a href="#">Add Car Details</a></div><br><br>
+	<div class="image">
+	 <h3>Chevrolet</h3>
+	 <a href="#"><img src="http://www.insidercarnews.com/wp-content/uploads/2014/10/2015-Chevrolet-SS-007.jpg" alt="Car1" width="500"></a><br>
+	</div>
+	<div class="image">
+	<h3>Exotic</h3>
+	<a href="#"><img src="http://i.dailymail.co.uk/i/pix/2013/10/02/article-2441512-02650200000005DC-411_634x380.jpg" alt="Car2" width="500" class="image"></a><br>
+    </div>
+  </div>
+  
+  <div id="form-page" style="display:none">
+		
+		  <form class="input-form">
+		  <table align="center" class="form-table">
+		    <tr> <td>Car Name: </td><td><input type="text" name="cname" id="cname" placeholder="Please Enter Car Name" required></td></tr>
+		    <tr> <td> Model: </td><td><input type="text" name="model" id="model" placeholder="Please Enter Model" required></td></tr>
+		    <tr> <td> Mileage: </td><td><input type="number" name="mileage" placeholder="Please Enter Mileage" id="mileage" required></td></tr>
+		    <tr> <td> Color: </td><td><input type="color" name="colour" placeholder="Please Enter Color of Car" id="colour" required></td></tr>
+		    <tr> <td>Image link</td><td><input id="carImage" type="url" name="car"></td></tr>	
+		    <tr> <td></td><td><input id="submit-button" type="Submit" value="Submit"></td></tr>
+		  </table>
+		 </form>
+	 </div>
+	 
+  <div id="detail-page" style="display:none">
+		<div id="home-link"><a href='#'>Home</a></div><br>
+  </div>
+    
+	
+  </body>
+</html>
