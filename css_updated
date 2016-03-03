@@ -1,0 +1,32 @@
+.carlist
+{
+	list-style-type: none;
+	}
+body {
+	background-color: #FAEED9;
+	
+	}
+
+#submit-page {
+
+	color: #000000;
+	font-size: 15pt;
+	background-color: #FAEED9;
+	}
+
+#form-page {
+
+	text-align:center;
+
+	}
+
+.form-table {
+
+	margin-top: 4cm;
+	
+	}
+.input-form tr td {
+	
+	font-size: 12pt;
+	
+	}
