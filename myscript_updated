@@ -1,0 +1,59 @@
+ var $ = jQuery;
+$(document).ready(function(){
+	$('#submit-page').click(function(){
+		$('#form-page').css("display", "block");
+		$('#home-page').css("display", "none");
+	});
+	var Cname1 = "Chevrolet";
+	var Model1 = "Model-SS";
+	var Mileage1 = "40";
+	var Colour1 = "Maroon"
+	var count = 1;  
+	$('.image').click(function(){ 
+	$('#detail-page').html("<div id='home-link'><a href='#'>Home</a></div><br><div>" +Cname1+ "</div><div>" +Model1+ "</div><div>" +Mileage1+ "</div><div>" +Colour1+ "</div>");
+				$('#home-page').css("display", "none");
+				$('#detail-page').css("display", "block");
+				$('#home-link').click(function(){ 
+					$('#detail-page').css("display", "none");
+					$('#home-page').css("display", "block");
+				});
+			});
+	$('#submit-button').click(function(){
+		var Cname = ($.trim($('#form-page #cname').val()));
+		var Model = ($.trim($('#form-page #model').val()));
+		var Mileage = ($.trim($('#form-page #mileage').val()));
+		var Colour = $('#form-page #colour').val();
+		 var image_url = $('#form-page #carImage').val();
+		 if (Cname == "" || Model == "" || Mileage == "") {
+			alert ('Please Enter Value');
+		}else {
+			$('#form-page #cname').val('');
+			$('#form-page #model').val('');
+			$('#form-page #mileage').val('');
+			$('#form-page #colour').val('');
+			$('#form-page #carImage').val('');
+			$('#home-page').append('<div id="image'+count+'"	 class="image"></div> ');
+			$('#home-page').css("display", "block");
+			$('#form-page').css("display", "none");
+			var dynamic_id = 'image'+ count;	
+			$('#home-page #' + dynamic_id).html('<a href="#"><img src="'+image_url+'" width=500" alt="Car Image"></a><h3>'+Cname+'</h3>');
+			$('#detail-page').append('<div id="image'+count+'" style="display:none"></div> ');
+			$('#detail-page #' + dynamic_id).html("<div>" +Cname+ "</div><div>" +Model+ "</div><div>" +Mileage+ "</div><div>" +Colour+ "</div>");
+			count++;
+			$('.image').click(function(){
+				$('#home-page').css("display", "none");
+				$('#form-page').css("display", "none");
+				var _id = $(this).attr('id');
+				$('#detail-page').css("display", "block");
+				$('#detail-page #' + _id).css("display", "block");
+				$('#home-link').click(function(){ 
+					$('#detail-page #' + _id).css("display", "none");
+					$('#detail-page').css("display", "none");
+					$('#form-page').css("display", "none");
+					$('#home-page').css("display", "block");
+				});
+			});
+	   
+		}
+	});   	
+ });	
