@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html data-ng-app="listApp">
+<head>
+	<title>Second Assignment</title>
+	<script type="text/javascript" src="lib/angular.js"></script>
+</head>
+<body>
+
+	<div data-ng-controller="listData">
+	<button data-ng-click="setColors()">Colors</button>
+	<button data-ng-click="setStates()">States</button>
+	<ul>
+		<li ng-repeat="value in getValues()">
+      {{ value }}
+    </li>
+  </ul>
+	</div>
+	
+	
+	
+<script type="text/javascript" src="scripts/module.js"></script>
+<script type="text/javascript" src="scripts/controllers/controller.js"></script>
+
+</body>
+</html>
