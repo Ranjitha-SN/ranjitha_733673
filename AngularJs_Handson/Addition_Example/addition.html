@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html data-ng-app="MyApp">
+<head>
+	<title>Addition Page</title>
+	<script type="text/javascript" src="lib/angular.js"></script>
+</head>
+<body>
+<div data-ng-controller="Addition">
+	<form>
+		First Number:<input type="number" data-ng-model="num1"/>
+		Second Number:<input type="number" data-ng-model="num2"/>
+		<button data-ng-click="setNumber(num1,num2)">Sum </button>
+		<br/>
+		result = {{result}}
+		
+	</form>
+	
+			
+		</div>
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/controller-add.js"></script>
+</body>
+
+</html>
