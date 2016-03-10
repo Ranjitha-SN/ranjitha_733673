@@ -1,0 +1,33 @@
+[{
+		"fname": "Ranjitha",
+		"lname": "Purohit",
+		"Age": 24,
+		"company": "TCS",
+		"email": "ranjitha@tcs.com"
+	}, {
+		"fname": "Mohit",
+		"lname": "Tomar",
+		"Age": 24,
+		"company": "TCS",
+		"email": "mtomar@tcs.com"
+	}, {
+		"fname": "Nayana",
+		"lname": "Purohit",
+		"Age": 28,
+		"company": "Wipro",
+		"email": "nayana@wipro.com"
+	}, {
+		"fname": "Barti",
+		"lname": "Somayaji",
+		"Age": 24,
+		"company": "Toyota",
+		"email": "bsomayaji@toyota.com"
+	}, {
+		"fname": "Pooja",
+		"lname": "Kote",
+		"Age": 23,
+		"company": "Orovio",
+		"email": "pkote@gmail.com"
+	}
+
+]

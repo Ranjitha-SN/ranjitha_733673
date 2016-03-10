@@ -1,0 +1,10 @@
+<h1>Users</h1>
+<ul>
+	<li data-ng-repeat="value in users" data-ng-click="setName(value)">
+      {{ value.fname }} <br/>
+    </li>
+</ul>
+  <div data-ng-controller="userDetails">
+	name={{currentUser.fname}}
+	age={{currentUser.Age}}
+</div>
