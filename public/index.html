@@ -8,7 +8,7 @@
 	<div data-ng-controller="ReadfileContlr">
 	<h3>{{wish}}</h3>
 	<ul>
-	<li data-ng-repeat="val in value track by val.id">{{val.subject}}</li>
+	<li data-ng-repeat="val in value track by val.id" key-property="id">{{val.subject}}</li>
 	</ul>
 	</div>
 <script type="text/javascript" src="scripts/module.js"></script>
