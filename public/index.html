@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html data-ng-app="fileioApp">
+<head>
+<script type="text/javascript" src="lib/angular.js"></script>
+<script type="text/javascript" src="lib/angular-route.js"></script>
+</head>
+<body>
+	<div data-ng-controller="ReadfileContlr">
+	<h3>{{wish}}</h3>
+	<ul>
+	<li data-ng-repeat="val in value track by val.id">{{val.subject}}</li>
+	</ul>
+	</div>
+<script type="text/javascript" src="scripts/module.js"></script>
+<script type="text/javascript" src="scripts/controllers/ReadFileController.js"></script>
+</body>
+</html>
